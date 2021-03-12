@@ -1,0 +1,22 @@
+.container{
+    margin: 0 auto;
+    /* scroll-snap-type: y mandatory;
+    overflow-y: scroll; */
+    height: 100vh;
+
+}
+
+.container section{
+    box-sizing: border-box;
+
+    /* scroll-snap-align: center; */
+}
+
+.container section:first-child{
+    overflow-y: hidden;
+    
+}
+
+
+
+
