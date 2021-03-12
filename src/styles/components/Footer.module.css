@@ -1,0 +1,154 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo img{
+    max-width: 200px;
+}
+
+.logo span{
+    font-size: 0.75rem;
+    color: #828282;
+    margin: 4px 0;
+}
+
+
+.about ul{
+    color: #828282;
+    margin: 0.25rem 0;
+    font-size: 0.75rem;
+}
+
+.about li{
+    margin: 0.25rem 0;
+}
+
+
+.about li:hover{
+    cursor: pointer;
+    color: #232129;
+}
+
+
+
+
+.informations{
+    display: flex;
+    flex-direction: column;
+}
+
+.informations span{
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0;
+    color: #828282;
+    font-size: 0.75rem;
+
+
+}
+
+.informations span:hover{
+    cursor: pointer;
+    color: #232129;
+}
+
+
+.informations span>svg{
+    margin: 0 0.25rem;
+    color: #232129;
+}
+
+.informations > div{
+   display: flex;
+
+}
+
+.informations >div >div{
+ display: flex;
+ margin: 0.25rem 0.5rem;
+ padding: 0.5rem;
+ border-radius: 50px;
+ cursor: pointer;
+
+ transition: all 0.3s;
+}
+
+.informations >div >div:hover{
+    background: #828282;
+    color: #E8EBF2;
+}
+
+.fillet{
+    display: none;
+}
+
+
+
+@media(max-width:680px){
+    .logo{
+        display: none;
+    }
+
+
+    .fillet{
+        display: flex;
+        justify-content: center;
+      
+        background: #232129;
+        height: 20px;
+        width: 100%;
+        
+        
+        color: #E8EBF2;
+        font-size: 0.75rem;
+      }
+}
+
+@media(max-width:680px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about h3{
+        margin: 0.5rem 0 ;
+
+    }
+
+    .about ul{
+        list-style: none;
+    }
+
+    .informations{
+        justify-content: center;
+        
+    }
+
+    .informations h3{
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    
+
+    .informations >div{
+        justify-content: center;
+    }
+}
